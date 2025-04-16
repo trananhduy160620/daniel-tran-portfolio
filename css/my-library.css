@@ -190,14 +190,37 @@ svg {
     outline: none;
 }
 
+/* Set defautl for root element */
+:root {
+    --color-yellow: #ffb400;
+    --color-orange: #fd6f00;
+    --color-black-blue-dark: #21243d;
+    --color-pink-light: #d9d9d9;
+    --color-white: #ffffff;
+    --color-gray-light: #767676;
+    --color-main: #c9b8af; /* Pale Silver */
+    --color-gray: #707070;
+    --color-secondary: #959595;
+}
+
+/* Set default html styles */
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
 /* Set default body styles */
 body {
-    font-family: system-ui, sans-serif;
+    font-family: "Kreon", sans-serif;
+    font-size: 1.6rem;
     background-color: #fff;
     color: #000;
     min-height: 100vh;
     text-rendering: optimizeSpeed;
+    line-height: 1.5;
 }
+
+/** ===== Grid System Layout For Responsive ===== **/
 
 /* ===== Container ===== */
 .container {
@@ -742,3 +765,42 @@ body {
         display: block;
     }
 }
+
+/* ===== Background Color Utilities ===== */
+.bg-yellow { background-color: var(--color-yellow); }
+.bg-orange { background-color: var(--color-orange); }
+.bg-black-blue-dark { background-color: var(--color-black-blue-dark); }
+.bg-pink-light { background-color: var(--color-pink-light); }
+.bg-white { background-color: var(--color-white); }
+.bg-gray-light { background-color: var(--color-gray-light); }
+.bg-main { background-color: var(--color-main); }
+.bg-gray { background-color: var(--color-gray); }
+.bg-secondary { background-color: var(--color-secondary); }
+
+/* ===== Text Color Utilities ===== */
+.text-yellow { color: var(--color-yellow); }
+.text-orange { color: var(--color-orange); }
+.text-black-blue-dark { color: var(--color-black-blue-dark); }
+.text-pink-light { color: var(--color-pink-light); }
+.text-white { color: var(--color-white); }
+.text-gray-light { color: var(--color-gray-light); }
+.text-main { color: var(--color-main); }
+.text-gray { color: var(--color-gray); }
+.text-secondary { color: var(--color-secondary); }
+
+/* ===== Text Size Utilities ===== */
+.text-xs   { font-size: 1.2rem; }  /* 12px */
+.text-sm   { font-size: 1.4rem; }  /* 14px */
+.text-base { font-size: 1.6rem; }  /* 16px */
+.text-md   { font-size: 1.8rem; }  /* 18px */
+.text-lg   { font-size: 2.0rem; }  /* 20px */
+.text-xl   { font-size: 2.4rem; }  /* 24px */
+.text-2xl  { font-size: 3.2rem; }  /* 32px */
+.text-3xl  { font-size: 4.0rem; }  /* 40px */
+.text-4xl  { font-size: 4.8rem; }  /* 48px */
+.text-5xl  { font-size: 6.4rem; }  /* 64px */
+
+/* ===== Font Weight Utilities ===== */
+.font-light { font-weight: 300; }
+.font-regular { font-weight: 400; }
+.font-bold { font-weight: 700; }
