@@ -804,3 +804,29 @@ body {
 .font-light { font-weight: 300; }
 .font-regular { font-weight: 400; }
 .font-bold { font-weight: 700; }
+
+/* ===== Border Width Utilities ===== */
+.border-1 { border-width: 1px; }
+.border-2 { border-width: 2px; }
+.border-3 { border-width: 3px; }
+.border-4 { border-width: 4px; }
+
+/* ===== Border Color Utilities ===== */
+.border-black { border-color: #000000; }
+.border-gray { border-color: var(--color-gray); }
+.border-secondary { border-color: var(--color-secondary); }
+.border-orange { border-color: var(--color-orange); }
+.border-yellow { border-color: var(--color-yellow); }
+.border-main { border-color: var(--color-main); }
+
+/* ===== Border Radius Utilities ===== */
+.rounded-sm { border-radius: 8px; }
+.rounded-md { border-radius: 12px; }
+.rounded-lg { border-radius: 16px; }
+.rounded-xl { border-radius: 20px; }
+.rounded-full { border-radius: 9999px; }
+
+/* ===== Border Style Utilities ===== */
+.border-solid { border-style: solid; }
+.border-dashed { border-style: dashed; }
+.border-dotted { border-style: dotted; }
