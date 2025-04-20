@@ -1,3 +1,4 @@
+/* ==== HomePage (index.html) ==== */
 /* ==== Header ==== */
 .header {
     padding: 20px 0;
@@ -157,13 +158,60 @@
     align-self: flex-start;
 }
 
+/* ==== List Services ==== */
+/* List Services */
+.list-services {
+    margin-top: 8rem;
+}
+
+/* Add spacing between elements in the List Services */
+.list-services > * + * {
+    margin-top: 2rem;
+}
+
+/* Service Item */
+.service-item {
+    padding: 32px;
+    margin-bottom: 16px;
+}
+
+.service-item > * + * {
+    margin-top: 16px;
+}
+
+.service-item__container {
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+}
+
+/* Service Item -> Image */
+.service-item__img {
+    width: 48px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+/* Service Item -> Title */
+.service-item__title {
+    /* max-height: 70px; */
+}
+
+/* Service Item -> Description */
+.service-item__desc {
+    /* height: 100%; */
+    /* max-height: 200px; */
+}
+
 /* Only Small Devices */
 @media (max-width: 575.98px) {
+    /* ==== Header ==== */
     /* header__navbar */
     .header__navbar {
         display: none;
     }
 
+    /* ==== Banner ==== */
     /* Intro Container */
     .intro {
         padding: 15px 0;
@@ -184,6 +232,7 @@
 
 /* SM Breakpoint */
 @media (min-width: 576px) {
+    /* ==== Header ==== */
     /* header__navbar */
     .header__navbar {
         display: none;
@@ -208,6 +257,7 @@
 
 /* MD Breakpoint */
 @media (min-width: 768px) {
+    /* ==== Header ==== */
     /* header__navbar */
     .header__navbar {
         display: flex;
@@ -234,12 +284,14 @@
 
 /* LG Breakpoint */
 @media (min-width: 992px) {
+    /* ==== Header ==== */
     /* header__navbar */
     .header__navbar {
         display: flex;
         gap: 32px;
     }
 
+    /* ==== Banner ==== */
     /* Intro Container */
     .intro {
         padding: 15px 0;
@@ -256,16 +308,20 @@
         width: 35%;
         padding: 5px 0px;
     }
+
+    /* ==== List Services ==== */
 }
 
 /* XL Breakpoint*/
 @media (min-width: 1199px) {
+    /* ==== Header ==== */
     /* header__navbar */
     .header__navbar {
         display: flex;
         gap: 32px;
     }
 
+    /* ==== Banner ==== */
     /* Intro Hire Me Button */
     .intro-hire-me-btn {
         width: 35%;
@@ -281,12 +337,14 @@
 
 /* XXL Breakpoint*/
 @media (min-width: 1900px) {
+    /* ==== Header ==== */
     /* header__navbar */
     .header__navbar {
         display: flex;
         gap: 32px;
     }
 
+    /* ==== Banner ==== */
     /* Intro Hire Me Button */
     .intro-hire-me-btn {
         width: 15%;
