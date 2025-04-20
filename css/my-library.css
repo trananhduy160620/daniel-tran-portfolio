@@ -964,6 +964,12 @@ body {
 .text-4xl  { font-size: 4.8rem; }  /* 48px */
 .text-5xl  { font-size: 6.4rem; }  /* 64px */
 
+/* ===== Text Alignment Utilities ===== */
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-left { text-align: left; }
+.text-justify { text-align:justify; }
+
 /* ===== Font Weight Utilities ===== */
 .font-light { font-weight: 300; }
 .font-regular { font-weight: 400; }
