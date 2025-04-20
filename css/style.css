@@ -1,0 +1,301 @@
+/* ==== Header ==== */
+.header {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* header__navbar */
+.header__navbar {
+    display: flex;
+    gap: 48px;
+}
+
+/* header__navbar-item */
+.header__navbar-item {
+    position: relative;
+}
+
+/* navbar-item--active */
+.navbar-item--active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background-color: var(--color-black);
+    border-radius: 9999px;
+}
+
+/* header__more-button */
+.header__more-button {
+    width: 28px;
+    height: 28px;
+}
+
+.popup-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.popup-toggle {
+    display: none;
+}
+
+/* Hidden more icon button */
+.popup-toggle:checked ~ .popup-button .popup-button__icon--more {
+    display: none;
+}
+
+/* Show dropdown icon button */
+.popup-toggle:checked ~ .popup-button .popup-button__icon--dropdown {
+    display: inline-block;
+}
+
+/* Style for button */
+.popup-button {
+    cursor: pointer;
+    /* padding: 8px 16px;
+    background-color: #ffb400; */
+    border: none;
+    color: white;
+    border-radius: 6px;
+}
+
+.popup-button__icon--more {
+    width: 28px;
+    height: 28px;
+}
+
+.popup-button__icon--dropdown {
+    width: 28px;
+    height: 28px;
+    display: none;
+}
+
+/* Popup style */
+.popup-content {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--color-white);
+    border: 1px solid #ccc;
+    padding: 16px;
+    min-width: 180px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+/* When checkbox is checked */
+.popup-toggle:checked + .popup-button + .popup-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* ==== Banner ==== */
+/* Intro */
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.intro > * + * {
+    margin-top: 20px;
+}
+
+/* Intro Title */
+.intro__title {
+    font-size: 4.8rem;
+    font-weight: bold;
+}
+
+/* Intro Description */
+.intro__desc {
+    font-size: 2rem;
+}
+
+/* Intro Container */
+.intro-container {
+    display: flex;
+    gap: 16px;
+}
+
+/* Intro Hire Me Button */
+.intro-hire-me-btn {
+    width: 15%;
+    padding: 5px 15px;
+}
+
+/* Intro Download CV Button */
+.intro-download-cv-btn {
+    width: 15%;
+    padding: 5px 15px;
+}
+
+/* avatar-container */
+.avatar-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* avatar-container__img */
+.avatar-container__img {
+    width: 500px;
+    height: 100%;
+    aspect-ratio: 1/1;
+    align-self: flex-start;
+}
+
+/* Only Small Devices */
+@media (max-width: 575.98px) {
+    /* header__navbar */
+    .header__navbar {
+        display: none;
+    }
+
+    /* Intro Container */
+    .intro {
+        padding: 15px 0;
+    }
+
+    /* Intro Hire Me Button */
+    .intro-hire-me-btn {
+        width: 25%;
+        padding: 5px 10px;
+    }
+
+    /* Intro Download CV Button */
+    .intro-download-cv-btn {
+        width: 25%;
+        padding: 5px 10px;
+    }
+}
+
+/* SM Breakpoint */
+@media (min-width: 576px) {
+    /* header__navbar */
+    .header__navbar {
+        display: none;
+    }
+
+    /* Intro Container */
+    .intro {
+        padding: 15px 0;
+    }
+
+    .intro-hire-me-btn {
+        width: 25%;
+        padding: 5px 10px;
+    }
+
+    /* Intro Download CV Button */
+    .intro-download-cv-btn {
+        width: 25%;
+        padding: 5px 10px;
+    }
+}
+
+/* MD Breakpoint */
+@media (min-width: 768px) {
+    /* header__navbar */
+    .header__navbar {
+        display: flex;
+        gap: 32px;
+    }
+
+    /* Intro Container */
+    .intro {
+        padding: 15px 0;
+    }
+
+    /* Intro Hire Me Button */
+    .intro-hire-me-btn {
+        width: 35%;
+        padding: 5px 0px;
+    }
+
+    /* Intro Download CV Button */
+    .intro-download-cv-btn {
+        width: 35%;
+        padding: 5px 0px;
+    }
+}
+
+/* LG Breakpoint */
+@media (min-width: 992px) {
+    /* header__navbar */
+    .header__navbar {
+        display: flex;
+        gap: 32px;
+    }
+
+    /* Intro Container */
+    .intro {
+        padding: 15px 0;
+    }
+
+    /* Intro Hire Me Button */
+    .intro-hire-me-btn {
+        width: 35%;
+        padding: 5px 0px;
+    }
+
+    /* Intro Download CV Button */
+    .intro-download-cv-btn {
+        width: 35%;
+        padding: 5px 0px;
+    }
+}
+
+/* XL Breakpoint*/
+@media (min-width: 1199px) {
+    /* header__navbar */
+    .header__navbar {
+        display: flex;
+        gap: 32px;
+    }
+
+    /* Intro Hire Me Button */
+    .intro-hire-me-btn {
+        width: 35%;
+        padding: 5px 0px;
+    }
+
+    /* Intro Download CV Button */
+    .intro-download-cv-btn {
+        width: 35%;
+        padding: 5px 0px;
+    }
+}
+
+/* XXL Breakpoint*/
+@media (min-width: 1900px) {
+    /* header__navbar */
+    .header__navbar {
+        display: flex;
+        gap: 32px;
+    }
+
+    /* Intro Hire Me Button */
+    .intro-hire-me-btn {
+        width: 15%;
+        padding: 5px 15px;
+    }
+
+    /* Intro Download CV Button */
+    .intro-download-cv-btn {
+        width: 15%;
+        padding: 5px 15px;
+    }
+}
