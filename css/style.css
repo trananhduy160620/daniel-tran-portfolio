@@ -219,14 +219,14 @@
 
     /* Intro Hire Me Button */
     .intro-hire-me-btn {
-        width: 25%;
-        padding: 5px 10px;
+        width: 35%;
+        padding: 5px 0px;
     }
 
     /* Intro Download CV Button */
     .intro-download-cv-btn {
-        width: 25%;
-        padding: 5px 10px;
+        width: 35%;
+        padding: 5px 0px;
     }
 }
 
