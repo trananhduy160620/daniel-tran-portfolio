@@ -1,4 +1,4 @@
-/* header */
+/* ==== Header ==== */
 .header {
     padding: 20px 0;
     display: flex;
@@ -99,11 +99,86 @@
     transform: translateY(0);
 }
 
+/* ==== Banner ==== */
+/* Intro */
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.intro > * + * {
+    margin-top: 20px;
+}
+
+/* Intro Title */
+.intro__title {
+    font-size: 4.8rem;
+    font-weight: bold;
+}
+
+/* Intro Description */
+.intro__desc {
+    font-size: 2rem;
+}
+
+/* Intro Container */
+.intro-container {
+    display: flex;
+    gap: 16px;
+}
+
+/* Intro Hire Me Button */
+.intro-hire-me-btn {
+    width: 15%;
+    padding: 5px 15px;
+}
+
+/* Intro Download CV Button */
+.intro-download-cv-btn {
+    width: 15%;
+    padding: 5px 15px;
+}
+
+/* avatar-container */
+.avatar-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* avatar-container__img */
+.avatar-container__img {
+    width: 500px;
+    height: 100%;
+    aspect-ratio: 1/1;
+    align-self: flex-start;
+}
+
 /* Only Small Devices */
 @media (max-width: 575.98px) {
     /* header__navbar */
     .header__navbar {
         display: none;
+    }
+
+    /* Intro Container */
+    .intro {
+        padding: 15px 0;
+    }
+
+    /* Intro Hire Me Button */
+    .intro-hire-me-btn {
+        width: 25%;
+        padding: 5px 10px;
+    }
+
+    /* Intro Download CV Button */
+    .intro-download-cv-btn {
+        width: 25%;
+        padding: 5px 10px;
     }
 }
 
@@ -112,6 +187,22 @@
     /* header__navbar */
     .header__navbar {
         display: none;
+    }
+
+    /* Intro Container */
+    .intro {
+        padding: 15px 0;
+    }
+
+    .intro-hire-me-btn {
+        width: 25%;
+        padding: 5px 10px;
+    }
+
+    /* Intro Download CV Button */
+    .intro-download-cv-btn {
+        width: 25%;
+        padding: 5px 10px;
     }
 }
 
@@ -122,6 +213,23 @@
         display: flex;
         gap: 32px;
     }
+
+    /* Intro Container */
+    .intro {
+        padding: 15px 0;
+    }
+
+    /* Intro Hire Me Button */
+    .intro-hire-me-btn {
+        width: 35%;
+        padding: 5px 0px;
+    }
+
+    /* Intro Download CV Button */
+    .intro-download-cv-btn {
+        width: 35%;
+        padding: 5px 0px;
+    }
 }
 
 /* LG Breakpoint */
@@ -130,6 +238,23 @@
     .header__navbar {
         display: flex;
         gap: 32px;
+    }
+
+    /* Intro Container */
+    .intro {
+        padding: 15px 0;
+    }
+
+    /* Intro Hire Me Button */
+    .intro-hire-me-btn {
+        width: 35%;
+        padding: 5px 0px;
+    }
+
+    /* Intro Download CV Button */
+    .intro-download-cv-btn {
+        width: 35%;
+        padding: 5px 0px;
     }
 }
 
@@ -140,6 +265,18 @@
         display: flex;
         gap: 32px;
     }
+
+    /* Intro Hire Me Button */
+    .intro-hire-me-btn {
+        width: 35%;
+        padding: 5px 0px;
+    }
+
+    /* Intro Download CV Button */
+    .intro-download-cv-btn {
+        width: 35%;
+        padding: 5px 0px;
+    }
 }
 
 /* XXL Breakpoint*/
@@ -148,5 +285,17 @@
     .header__navbar {
         display: flex;
         gap: 32px;
+    }
+
+    /* Intro Hire Me Button */
+    .intro-hire-me-btn {
+        width: 15%;
+        padding: 5px 15px;
+    }
+
+    /* Intro Download CV Button */
+    .intro-download-cv-btn {
+        width: 15%;
+        padding: 5px 15px;
     }
 }
