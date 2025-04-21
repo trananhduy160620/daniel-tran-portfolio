@@ -508,6 +508,14 @@
         display: none;
     }
 
+    .mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+
     /* ==== Banner ==== */
     /* Intro Container */
     .intro {
@@ -527,6 +535,11 @@
     }
 
     /* ===== Feedback Content ==== */
+    /* List Feedback */
+    .list-feedback {
+        margin-left: 0;
+        margin-right: 0;
+    }
     /* Feedback Item */
     .feedback-item {
         padding: 20px;
@@ -661,6 +674,14 @@
         display: none;
     }
 
+    .mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+
     /* Intro Container */
     .intro {
         padding: 15px 0;
@@ -761,6 +782,14 @@
         gap: 32px;
     }
 
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
     /* Intro Container */
     .intro {
         padding: 15px 0;
@@ -842,6 +871,14 @@
         gap: 32px;
     }
 
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
     /* ==== Banner ==== */
     /* Intro Container */
     .intro {
@@ -921,6 +958,14 @@
         gap: 32px;
     }
 
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
     /* ==== Banner ==== */
     /* Intro Hire Me Button */
     .intro-hire-me-btn {
@@ -960,6 +1005,14 @@
     .header__navbar {
         display: flex;
         gap: 32px;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
     }
 
     /* ==== Banner ==== */
