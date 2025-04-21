@@ -349,7 +349,6 @@
 
 /* Skill Item -> Wrapper */
 .skill-item__wrapper {
-
 }
 
 .skill-item__wrapper > * + * {
@@ -368,19 +367,71 @@
 
 /* Frontend Skills */
 .frontend {
-
 }
 
 /* Backend Skills */
 .backend {
-
 }
 
 /* Mobile Skills */
 .mobile {
-
 }
 
+/* ==== ProjectsPage (projects.html) ==== */
+/* Projects */
+.projects {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* project-item-wrapper */
+.project-item-wrapper {
+    padding: 10px;
+}
+
+/* Project Item Wrapper */
+/* Left side: image wrapper */
+.project-item__img-wrapper {
+    flex: 1 1 45%;
+    max-width: 500px;
+}
+
+/* Project Item -> Image */
+.project-item__img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2/1;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+/* Project Item -> Info */
+.project-item__info {
+    height: 100%;
+    flex: 1 1 45%;
+}
+
+.project-item__info > * + * {
+    margin-top: 8px;
+}
+
+/* Project Item -> actions */
+.project-item__actions > * + * {
+    margin-left: 8px;
+}
+
+/* Project Item -> btn */
+.project-item__btn {
+    padding: 4px 16px;
+}
+
+/* Go Live */
+.go-live {
+}
+
+/* Go Github */
+.go-github {
+}
 
 /* ==== Responsive ==== */
 /* Only Small Devices */
@@ -467,10 +518,60 @@
         justify-content: space-evenly;
         align-items: center;
     }
+
+    /* ==== ProjectsPage (projects.html) ==== */
+    /* Projects */
+    .projects {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    /* Project Item Wrapper */
+    .project-item-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    /* Project Item -> Image Wrapper */
+    .project-item__img-wrapper {
+        /* width: 100%;
+        height: 300px; */
+    }
+
+    /* Project Item -> Image */
+    .project-item__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Project Item -> Info */
+    .project-item__info > * + * {
+        margin-top: 8px;
+    }
+
+    /* Project Item -> actions */
+    .project-item__actions > * + * {
+        margin-left: 8px;
+    }
+
+    /* Project Item -> btn */
+    .project-item__btn {
+        padding: 4px 16px;
+    }
+
+    /* Go Live */
+    .go-live {
+    }
+
+    /* Go Github */
+    .go-github {
+    }
 }
 
 /* SM Breakpoint */
-@media (min-width: 576px) {
+@media (min-width: 576px) and (max-width: 765px) {
     /* ==== Header ==== */
     /* header__navbar */
     .header__navbar {
@@ -506,6 +607,50 @@
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
+    }
+
+    /* ==== ProjectsPage (projects.html) ==== */
+    /* Projects */
+    .project {
+    }
+
+    /* Project Item Wrapper */
+    .project-item-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+
+
+    /* Project Item -> Image */
+    .project-item__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Project Item -> Info */
+    .project-item__info > * + * {
+        margin-top: 8px;
+    }
+
+    /* Project Item -> actions */
+    .project-item__actions > * + * {
+        margin-left: 8px;
+    }
+
+    /* Project Item -> btn */
+    .project-item__btn {
+        padding: 4px 16px;
+    }
+
+    /* Go Live */
+    .go-live {
+    }
+
+    /* Go Github */
+    .go-github {
     }
 }
 
@@ -568,6 +713,19 @@
         height: 100%;
         object-fit: cover;
     }
+
+    /* ==== ProjectsPage (projecs.html) ==== */
+    /* Project Item Wrapper */
+    .project-item-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    /* Project Item -> btn */
+    .project-item__btn {
+        padding: 4px 16px;
+    }
 }
 
 /* LG Breakpoint */
@@ -629,6 +787,24 @@
         height: 100%;
         object-fit: cover;
     }
+
+    /* ===== ProjectsPage (projects.html) ==== */
+    .projects {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    /* Project Item Wrapper */
+    .project-item-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    /* Project Item -> btn */
+    .project-item__btn {
+        padding: 4px 16px;
+    }
 }
 
 /* XL Breakpoint*/
@@ -652,10 +828,28 @@
         width: 35%;
         padding: 5px 0px;
     }
+
+    /* ===== ProjectsPage (projects.html) ==== */
+    .projects {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    /* Project Item Wrapper */
+    .project-item-wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+    }
+
+    /* Project Item -> btn */
+    .project-item__btn {
+        padding: 4px 16px;
+    }
 }
 
 /* XXL Breakpoint*/
-@media (min-width: 1900px) {
+@media (min-width: 1400px) {
     /* ==== Header ==== */
     /* header__navbar */
     .header__navbar {
@@ -674,5 +868,23 @@
     .intro-download-cv-btn {
         width: 15%;
         padding: 5px 15px;
+    }
+
+    /* ===== ProjectsPage (projects.html) ==== */
+    .projects {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    /* Project Item Wrapper */
+    .project-item-wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+    }
+
+    /* Project Item -> btn */
+    .project-item__btn {
+        padding: 4px 16px;
     }
 }
