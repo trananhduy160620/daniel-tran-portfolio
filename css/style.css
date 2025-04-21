@@ -310,6 +310,39 @@
 .br-xs {
     display: none;
 }
+
+/* ==== AboutPage (about.html) ==== */
+/* About */
+.about {
+    margin: 0 10%;
+}
+
+/* Add spacing between elements in the List Feedback */
+.about > * + * {
+    margin-top: 16px;
+}
+
+/* About Me -> Image Wrapper */
+.about-me__img-wrapper {
+    /* margin-bottom: 4rem; */
+}
+
+/* About Me -> Image */
+.about-me__img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* About Me -> Desc Wrapper */
+.about-me__desc-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 20px;
+}
+
 /* ==== Responsive ==== */
 /* Only Small Devices */
 @media (max-width: 575.98px) {
@@ -380,6 +413,21 @@
     .br-xs {
         display: inline-block;
     }
+
+    /* ==== AboutPage (about.html) ==== */
+    /* About Me -> Image Wrapper */
+    .about-me__img-wrapper {
+        margin-bottom: 4rem;
+    }
+
+    /* About Me -> Desc Wrapper */
+    .about-me__desc-wrapper {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
 }
 
 /* SM Breakpoint */
@@ -404,6 +452,21 @@
     .intro-download-cv-btn {
         width: 25%;
         padding: 5px 10px;
+    }
+
+    /* ==== AboutPage (about.html) ==== */
+    /* About Me -> Image Wrapper */
+    .about-me__img-wrapper {
+        margin-bottom: 4rem;
+    }
+
+    /* About Me -> Desc Wrapper */
+    .about-me__desc-wrapper {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
     }
 }
 
