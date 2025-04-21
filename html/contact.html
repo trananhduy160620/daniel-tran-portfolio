@@ -123,17 +123,19 @@
             <h3 class="contact__subtitle text-xl text-center text-secondary">
                 Cultivating Connections: Reach Out and Connect with Me
             </h3>
-            <form action="">
+            <form id="contact-form" action="">
                 <div class="container contact__form">
                     <div class="row">
                         <div class="col-12 col-md-6">
+                            <!-- <p id="error-name" class="error-message text-red text-sm"></p> -->
                             <input
                                 id="name"
                                 class="contact__input border-2 border-black"
                                 placeholder="Name"
                                 type="text"
-                                required
                             />
+                            <p id="error-name" class="error-message text-red text-sm"></p>
+
                         </div>
                         <div class="col-12 col-md-6">
                             <input
@@ -141,8 +143,8 @@
                                 class="contact__input contact__input-email border-2 border-black"
                                 placeholder="Email"
                                 type="email"
-                                required
                             />
+                            <p id="error-email" class="error-message text-red"></p>
                         </div>
                     </div>
                     <div class="row">
@@ -152,8 +154,8 @@
                                 class="contact__input border-2 border-black"
                                 placeholder="Phone Number"
                                 type="text"
-                                required
                             />
+                            <p id="error-phone" class="error-message text-red"></p>
                         </div>
                         <div class="col-12 col-md-6">
                             <select
@@ -183,6 +185,7 @@
                                     Web Optimization
                                 </option>
                             </select>
+                            <p id="error-services" class="error-message text-red"></p>
                         </div>
                     </div>
                     <div class="row">
@@ -190,11 +193,15 @@
                             <textarea
                                 class="contact__input contact__input-area border-2 border-black"
                                 name=""
-                                id=""
+                                id="project-details"
                                 cols="30"
                                 rows="10"
                                 placeholder="Project Details..."
                             ></textarea>
+                            <div class="contact-input-area-wrapper">
+                                <p id="error-project-details" class="error-project-details text-red"></p>
+                                <p id="char-count" class="text-right">0/200 word(s)</p>
+                            </div>
                         </div>
                         <div class="col-12 col-md-12">
                             <div class="contact__btn-wrapper">
@@ -253,5 +260,7 @@
                 </div>
             </div>
         </div>
+
+        <script src="/js/main.js"></script>
     </body>
 </html>
