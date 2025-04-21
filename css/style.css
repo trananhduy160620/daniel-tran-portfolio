@@ -163,7 +163,6 @@
 /* ==== List Services ==== */
 /* List Services */
 .list-services {
-    margin-top: 8rem;
 }
 
 /* Add spacing between elements in the List Services */
@@ -208,7 +207,6 @@
 /* ==== List Feedback ==== */
 /* List Feedback */
 .list-feedback {
-    margin-top: 8rem;
     margin-left: 15%;
     margin-right: 15%;
 }
@@ -278,6 +276,40 @@
     max-height: fit-content;
 }
 
+/* ==== Footer ==== */
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 0;
+}
+
+/* Footer -> Social Container */
+.footer__social-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Footer -> Social Item */
+.footer__social-item {
+    width: 40px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+/* Footer -> Title */
+.footer__title {
+}
+
+.br-xs {
+    display: none;
+}
 /* ==== Responsive ==== */
 /* Only Small Devices */
 @media (max-width: 575.98px) {
@@ -337,6 +369,16 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+
+    /* ==== Footer ==== */
+    /* Footer -> Title */
+    .footer__title {
+        text-align: center;
+    }
+
+    .br-xs {
+        display: inline-block;
     }
 }
 
@@ -488,7 +530,7 @@
 }
 
 /* XL Breakpoint*/
-@media (min-width: 1200px)  and (max-width: 1399.98px)  {
+@media (min-width: 1200px) and (max-width: 1399.98px) {
     /* ==== Header ==== */
     /* header__navbar */
     .header__navbar {

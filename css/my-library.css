@@ -1000,3 +1000,7 @@ body {
 .border-solid { border-style: solid; }
 .border-dashed { border-style: dashed; }
 .border-dotted { border-style: dotted; }
+
+/* ===== Margin Utilities ===== */
+.mt-4 { margin-top: 4rem; }
+.mt-8 { margin-top: 8rem; }
