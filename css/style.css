@@ -343,6 +343,44 @@
     padding: 0 20px;
 }
 
+/* ==== SkillsPage (skills.html) ==== */
+/* Skills */
+
+/* Skill Item -> Wrapper */
+.skill-item__wrapper {
+
+}
+
+.skill-item__wrapper > * + * {
+    margin-top: 16px;
+}
+
+/* Skill Subitem */
+.skill-subitem {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+/* Frontend Skills */
+.frontend {
+
+}
+
+/* Backend Skills */
+.backend {
+
+}
+
+/* Mobile Skills */
+.mobile {
+
+}
+
+
 /* ==== Responsive ==== */
 /* Only Small Devices */
 @media (max-width: 575.98px) {
