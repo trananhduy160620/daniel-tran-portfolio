@@ -202,6 +202,26 @@ svg {
     --color-main: #c9b8af; /* Pale Silver */
     --color-gray: #707070;
     --color-secondary: #959595;
+
+    /* Frontend Skill Colors */
+    --color-html: #FF6D01;
+    --color-tailwindcss: #00ACC1;
+    --color-css: #059BE5;
+    --color-react: #54C1DE;
+
+    /* Backend Skill Colors */
+    --color-postman: #F36933;
+    --color-mongodb: #4CAF50;
+    --color-mysql: #027176;
+    --color-postgresql: #32648D;
+    --color-nodejs: #21A366;
+    --color-expressjs: #D169FE;
+
+    /* Mobile Skill Colors */
+    --color-apple: #1698EE;
+    --color-swiftui: #1B7CF7;
+    --color-java: #4A2DE6;
+    --color-android: #A1D3A2;
 }
 
 /* Set default html styles */
@@ -951,6 +971,52 @@ body {
 .text-main { color: var(--color-main); }
 .text-gray { color: var(--color-gray); }
 .text-secondary { color: var(--color-secondary); }
+
+/* ==== FRONTEND ==== */
+.bg-html         { background-color: var(--color-html); }
+.text-html       { color: var(--color-html); }
+
+.bg-tailwindcss  { background-color: var(--color-tailwindcss); }
+.text-tailwindcss{ color: var(--color-tailwindcss); }
+
+.bg-css          { background-color: var(--color-css); }
+.text-css        { color: var(--color-css); }
+
+.bg-react        { background-color: var(--color-react); }
+.text-react      { color: var(--color-react); }
+
+/* ==== BACKEND ==== */
+.bg-postman      { background-color: var(--color-postman); }
+.text-postman    { color: var(--color-postman); }
+
+.bg-mongodb      { background-color: var(--color-mongodb); }
+.text-mongodb    { color: var(--color-mongodb); }
+
+.bg-mysql        { background-color: var(--color-mysql); }
+.text-mysql      { color: var(--color-mysql); }
+
+.bg-postgresql   { background-color: var(--color-postgresql); }
+.text-postgresql { color: var(--color-postgresql); }
+
+.bg-nodejs       { background-color: var(--color-nodejs); }
+.text-nodejs     { color: var(--color-nodejs); }
+
+.bg-expressjs    { background-color: var(--color-expressjs); }
+.text-expressjs  { color: var(--color-expressjs); }
+
+/* ==== MOBILE ==== */
+.bg-apple        { background-color: var(--color-apple); }
+.text-apple      { color: var(--color-apple); }
+
+.bg-swiftui      { background-color: var(--color-swiftui); }
+.text-swiftui    { color: var(--color-swiftui); }
+
+.bg-java         { background-color: var(--color-java); }
+.text-java       { color: var(--color-java); }
+
+.bg-android      { background-color: var(--color-android); }
+.text-android    { color: var(--color-android); }
+
 
 /* ===== Text Size Utilities ===== */
 .text-xs   { font-size: 1.2rem; }  /* 12px */
