@@ -314,7 +314,8 @@
 /* ==== AboutPage (about.html) ==== */
 /* About */
 .about {
-    margin: 0 10%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 /* Add spacing between elements in the List Feedback */
