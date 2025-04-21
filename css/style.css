@@ -433,6 +433,60 @@
 .go-github {
 }
 
+/* ==== ContactPage (contact.html) ==== */
+/* Contact */
+.contact {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+/* Add spacing between the elements */
+.contact > * + * {
+    margin-top: 16px;
+}
+
+/* contact__form */
+.contact__form > * + * {
+    margin-top: 16px;
+}
+
+/* contact__input-name */
+.contact__input {
+    width: 100%;
+    height: 40px;
+    padding: 8px 16px;
+    outline: 1px solid #000;
+    border-radius: 8px;
+}
+
+/* contact__input-select */
+.contact__input-select {
+    background-image: url("/images/ic-dropdown-48.png");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+}
+
+/* contact__input-area */
+.contact__input-area {
+    resize: none;
+    height: 200px;
+}
+
+/* contact__btn-wrapper */
+.contact__btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+}
+
+/* contact__submit-btn */
+.contact__submit-btn {
+    width: 25%;
+    padding: 4px 32px;
+}
+
 /* ==== Responsive ==== */
 /* Only Small Devices */
 @media (max-width: 575.98px) {
@@ -568,6 +622,23 @@
     /* Go Github */
     .go-github {
     }
+
+    /* ==== ContactPage (contact.html) ==== */
+    /* Contact */
+    .contact {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* contact__input-email */
+    .contact__input-email {
+        margin-top: 16px;
+    }
+
+    /* contact__input-select */
+    .contact__input-select {
+        margin-top: 16px;
+    }
 }
 
 /* SM Breakpoint */
@@ -621,8 +692,6 @@
         gap: 32px;
     }
 
-
-
     /* Project Item -> Image */
     .project-item__img {
         width: 100%;
@@ -651,6 +720,23 @@
 
     /* Go Github */
     .go-github {
+    }
+
+    /* ==== ContactPage (contact.html) ==== */
+    /* Contact */
+    .contact {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* contact__input-email */
+    .contact__input-email {
+        margin-top: 16px;
+    }
+
+    /* contact__input-select */
+    .contact__input-select {
+        margin-top: 16px;
     }
 }
 
@@ -725,6 +811,13 @@
     /* Project Item -> btn */
     .project-item__btn {
         padding: 4px 16px;
+    }
+
+    /* ==== ContactPage (contact.html) ==== */
+    /* Contact */
+    .contact {
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
