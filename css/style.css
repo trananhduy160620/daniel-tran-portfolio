@@ -473,6 +473,13 @@
     height: 200px;
 }
 
+/* contact-input-area-wrapper */
+.contact-input-area-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /* contact__btn-wrapper */
 .contact__btn-wrapper {
     display: flex;
@@ -485,6 +492,11 @@
 .contact__submit-btn {
     width: 25%;
     padding: 4px 32px;
+}
+
+/* error-message */
+.error-message {
+    /* padding: 0 16px; */
 }
 
 /* ==== Responsive ==== */

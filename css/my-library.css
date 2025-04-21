@@ -202,6 +202,7 @@ svg {
     --color-main: #c9b8af; /* Pale Silver */
     --color-gray: #707070;
     --color-secondary: #959595;
+    --color-red: #EF4444;
 
     /* Frontend Skill Colors */
     --color-html: #FF6D01;
@@ -960,6 +961,7 @@ body {
 .bg-main { background-color: var(--color-main); }
 .bg-gray { background-color: var(--color-gray); }
 .bg-secondary { background-color: var(--color-secondary); }
+.bg-red { background-color: var(--color-red); }
 
 /* ===== Text Color Utilities ===== */
 .text-yellow { color: var(--color-yellow); }
@@ -971,6 +973,7 @@ body {
 .text-main { color: var(--color-main); }
 .text-gray { color: var(--color-gray); }
 .text-secondary { color: var(--color-secondary); }
+.text-red { color: var(--color-red); }
 
 /* ==== FRONTEND ==== */
 .bg-html         { background-color: var(--color-html); }
