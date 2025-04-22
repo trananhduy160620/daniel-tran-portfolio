@@ -13,32 +13,47 @@
         <title>Gallery - Daniel Tran Portfolio</title>
     </head>
     <body>
+        <!-- Header -->
         <div class="bg-main">
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12 col-md-12">
                         <!-- Header -->
                         <div class="header bg-main">
                             <!-- Logo -->
-                            <h1 class="header__logo text-xl font-bold">
+                            <h1
+                                class="header__logo text-xl font-bold text-right"
+                            >
                                 <a href="/html/index.html">DANIELVERSAL.DEV</a>
                             </h1>
                             <!-- Navbar -->
                             <ul class="header__navbar">
-                                <li class="header__navbar-item navbar-item--active">
-                                    <a class="text-lg" href="/html/index.html">Home</a>
+                                <li class="header__navbar-item">
+                                    <a class="text-lg" href="/html/index.html"
+                                        >Home</a
+                                    >
                                 </li>
                                 <li class="header__navbar-item">
-                                    <a class="text-lg" href="/html/about.html">About</a>
+                                    <a class="text-lg" href="/html/about.html"
+                                        >About</a
+                                    >
                                 </li>
                                 <li class="header__navbar-item">
-                                    <a class="text-lg" href="/html/skills.html">Skills</a>
+                                    <a class="text-lg" href="/html/skills.html"
+                                        >Skills</a
+                                    >
                                 </li>
                                 <li class="header__navbar-item">
-                                    <a class="text-lg" href="/html/projects.html">Projects</a>
+                                    <a
+                                        class="text-lg"
+                                        href="/html/projects.html"
+                                        >Projects</a
+                                    >
                                 </li>
                                 <li class="header__navbar-item">
-                                    <a class="text-lg" href="/html/contact.html">Contact</a>
+                                    <a class="text-lg" href="/html/contact.html"
+                                        >Contact</a
+                                    >
                                 </li>
                             </ul>
                             <!-- More Button -->
@@ -51,7 +66,10 @@
                                 />
 
                                 <!-- The button -->
-                                <label for="popup-toggle" class="popup-button">
+                                <label
+                                    for="popup-toggle"
+                                    class="popup-button text-right"
+                                >
                                     <img
                                         class="popup-button__icon--more"
                                         src="/images/ic-more-48.png"
@@ -70,7 +88,67 @@
                                 <div
                                     class="popup-content bg-white border-1 border-secondary rounded-sm"
                                 >
-                                    <ul class="popup-content__list">
+                                    <!-- Component for desktop -->
+                                    <ul class="popup-content__list desktop">
+                                        <li class="popup-content__item">
+                                            <a
+                                                class="text-lg"
+                                                href="/html/gallery.html"
+                                                >Gallery</a
+                                            >
+                                        </li>
+                                        <li class="popup-content__item">
+                                            <a
+                                                class="text-lg"
+                                                href="/html/culture.html"
+                                                >Culture</a
+                                            >
+                                        </li>
+                                        <li class="popup-content__item">
+                                            <a
+                                                class="text-lg"
+                                                href="/html/internship.html"
+                                                >Internship</a
+                                            >
+                                        </li>
+                                    </ul>
+                                    <!-- Component for mobile -->
+                                    <ul class="popup-content__list mobile">
+                                        <li class="popup-content__item">
+                                            <a
+                                                class="text-lg"
+                                                href="/html/index.html"
+                                                >Home</a
+                                            >
+                                        </li>
+                                        <li class="popup-content__item">
+                                            <a
+                                                class="text-lg"
+                                                href="/html/about.html"
+                                                >About</a
+                                            >
+                                        </li>
+                                        <li class="popup-content__item">
+                                            <a
+                                                class="text-lg"
+                                                href="/html/skills.html"
+                                                >Skills</a
+                                            >
+                                        </li>
+                                        <li class="popup-content__item">
+                                            <a
+                                                class="text-lg"
+                                                href="/html/projects.html"
+                                                >Projects</a
+                                            >
+                                        </li>
+                                        <li class="popup-content__item">
+                                            <a
+                                                class="text-lg"
+                                                href="/html/contact.html"
+                                                >Contact</a
+                                            >
+                                        </li>
                                         <li class="popup-content__item">
                                             <a
                                                 class="text-lg"
@@ -100,5 +178,393 @@
                 </div>
             </div>
         </div>
+
+        <!-- Gallery -->
+        <div class="container gallery mt-4">
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <div class="">
+                        <!-- Gallery -> Title -->
+                        <h2
+                            class="gallery__title text-main text-4xl font-bold text-center"
+                        >
+                            Visual Stories From My Tech Journey
+                        </h2>
+                        <!-- Gallery -> SubTitle -->
+                        <h3
+                            class="gallery__subtitle text-xl text-center text-secondary"
+                        >
+                            A glimpse into the process, passion, and projects
+                            that define my path.
+                        </h3>
+                        <!-- Carousel -->
+                        <div class="carousel mt-4 bg-pink-light rounded-md">
+                            <!-- Button previous -->
+                            <button
+                                onclick="plusSlides(-1)"
+                                class="nav-button nav-button--left bg-html rounded-full"
+                            >
+                                <img
+                                    class="left"
+                                    src="/images/ic-arrow-left-48.png"
+                                    alt="arrow left"
+                                />
+                            </button>
+
+                            <div class="carousel-content">
+                                <!-- Gallery Item 1 -->
+                                <div class="content-item content-item--active">
+                                    <!-- Gallery Item 1 -> Description -->
+                                    <div class="content-item__desc">
+                                        <p class="text-xl text-secondary">
+                                            Discovering the world of technology
+                                            as a child was a moment of wonder.
+                                            The glowing screen, the clunky
+                                            keyboard, and the sound of booting
+                                            up became the seeds of curiosity.
+                                            Even without understanding what
+                                            programming meant, the idea of
+                                            creating with a computer felt
+                                            magical and limitless. This phase
+                                            was all about playing, exploring,
+                                            and forming that spark of passion.
+                                            It was the beginning of a journey,
+                                            and every click was a step into a
+                                            new world of possibility.
+                                        </p>
+                                    </div>
+
+                                    <!-- Gallery Item 1 -> Image -->
+                                    <div class="content-item__wrapper">
+                                        <img
+                                            class="content-item__img rounded-md"
+                                            src="/images/img-gallery-1.jpeg"
+                                            alt="Gallery 1"
+                                        />
+                                    </div>
+                                </div>
+
+                                <!-- Gallery Item 2 -->
+                                <div class="content-item">
+                                    <!-- Gallery Item 2 -> Description -->
+                                    <div class="content-item__desc">
+                                        <p class="text-xl text-secondary">
+                                            As curiosity deepened, I began
+                                            exploring technology
+                                            hands-on—reinstalling operating
+                                            systems, tweaking settings, and
+                                            breaking things just to learn how to
+                                            fix them. I started building simple
+                                            HTML pages, customizing desktop
+                                            environments, and reading forums
+                                            late at night. It was through these
+                                            countless hours of experimentation
+                                            that I began to understand how
+                                            things work. This stage laid a
+                                            strong foundation for deeper
+                                            technical learning and a mindset of
+                                            problem-solving.
+                                        </p>
+                                    </div>
+
+                                    <!-- Gallery Item 2 -> Image -->
+                                    <div class="content-item__wrapper">
+                                        <img
+                                            class="content-item__img rounded-md"
+                                            src="/images/img-gallery-2.jpeg"
+                                            alt="Gallery 2"
+                                        />
+                                    </div>
+                                </div>
+
+                                <!-- Gallery Item 3 -->
+                                <div class="content-item">
+                                    <!-- Gallery Item 3 -> Description -->
+                                    <div class="content-item__desc">
+                                        <p class="text-xl text-secondary">
+                                            The first lines of code I ever wrote
+                                            were simple, yet they felt powerful.
+                                            Seeing 'Hello, World!' printed on
+                                            the screen was like discovering a
+                                            new language—a language of logic and
+                                            creativity. I explored variables,
+                                            loops, and conditions, fascinated by
+                                            how code could automate tasks or
+                                            create visual results. This phase
+                                            marked a major transition from being
+                                            just a tech user to becoming a tech
+                                            creator. Every small program became
+                                            a puzzle and a personal victory.
+                                        </p>
+                                    </div>
+
+                                    <!-- Gallery Item 3 -> Image -->
+                                    <div class="content-item__wrapper">
+                                        <img
+                                            class="content-item__img rounded-md"
+                                            src="/images/img-gallery-3.jpeg"
+                                            alt="Gallery 3"
+                                        />
+                                    </div>
+                                </div>
+
+                                <!-- Gallery Item 4 -->
+                                <div class="content-item">
+                                    <!-- Gallery Item 4 -> Description -->
+                                    <div class="content-item__desc">
+                                        <p class="text-xl text-secondary">
+                                            I took my first leap by building a
+                                            real project—however small. Whether
+                                            it was a static portfolio or a basic
+                                            calculator app, it felt monumental.
+                                            I learned about structuring code,
+                                            designing user interfaces, and
+                                            debugging with patience. Even with
+                                            limited skills, I poured my heart
+                                            into it. Sharing my project with
+                                            others and receiving feedback gave
+                                            me confidence and motivation. It was
+                                            no longer just practice; it was the
+                                            start of making things that
+                                            mattered.
+                                        </p>
+                                    </div>
+
+                                    <!-- Gallery Item 4 -> Image -->
+                                    <div class="content-item__wrapper">
+                                        <img
+                                            class="content-item__img rounded-md"
+                                            src="/images/img-gallery-4.jpeg"
+                                            alt="Gallery 4"
+                                        />
+                                    </div>
+                                </div>
+
+                                <!-- Gallery Item 5 -->
+                                <div class="content-item">
+                                    <!-- Gallery Item 5 -> Description -->
+                                    <div class="content-item__desc">
+                                        <p class="text-xl text-secondary">
+                                            To sharpen my skills and fill in the
+                                            gaps, I pursued structured
+                                            learning—through university courses
+                                            or intensive bootcamps. I studied
+                                            computer science fundamentals like
+                                            data structures, algorithms, and
+                                            database systems. Collaborating with
+                                            peers, completing assignments, and
+                                            meeting deadlines taught me
+                                            discipline and deeper understanding.
+                                            This stage transformed my raw
+                                            enthusiasm into solid technical
+                                            capability. I began to see
+                                            programming not only as art, but as
+                                            engineering.
+                                        </p>
+                                    </div>
+
+                                    <!-- Gallery Item 5 -> Image -->
+                                    <div class="content-item__wrapper">
+                                        <img
+                                            class="content-item__img rounded-md"
+                                            src="/images/img-gallery-5.jpeg"
+                                            alt="Gallery 5"
+                                        />
+                                    </div>
+                                </div>
+
+                                <!-- Gallery Item 6 -->
+                                <div class="content-item">
+                                    <!-- Gallery Item 6 -> Description -->
+                                    <div class="content-item__desc">
+                                        <p class="text-xl text-secondary">
+                                            I started contributing to group
+                                            projects and open-source codebases,
+                                            learning to work in teams and manage
+                                            version control with Git. Through
+                                            these experiences, I realized that
+                                            software is rarely built in
+                                            isolation. Communication,
+                                            documentation, and mutual support
+                                            became essential. I gained a better
+                                            sense of software architecture and
+                                            learned how to give and receive code
+                                            reviews. Working collaboratively
+                                            made me a better, more thoughtful
+                                            developer.
+                                        </p>
+                                    </div>
+
+                                    <!-- Gallery Item 6 -> Image -->
+                                    <div class="content-item__wrapper">
+                                        <img
+                                            class="content-item__img rounded-md"
+                                            src="/images/img-gallery-6.jpeg"
+                                            alt="Gallery 6"
+                                        />
+                                    </div>
+                                </div>
+
+                                <!-- Gallery Item 7 -->
+                                <div class="content-item">
+                                    <!-- Gallery Item 7 -> Description -->
+                                    <div class="content-item__desc">
+                                        <p class="text-xl text-secondary">
+                                            Landing an internship or freelance
+                                            gig was a milestone moment. It was
+                                            the first time I was paid to solve
+                                            problems with code. I interacted
+                                            with real clients or stakeholders,
+                                            worked under deadlines, and faced
+                                            unpredictable challenges. I applied
+                                            my knowledge to build and deliver
+                                            features, sometimes under pressure.
+                                            These experiences taught me
+                                            responsibility, business awareness,
+                                            and adaptability. The professional
+                                            world of tech became tangible and
+                                            real.
+                                        </p>
+                                    </div>
+
+                                    <!-- Gallery Item 7 -> Image -->
+                                    <div class="content-item__wrapper">
+                                        <img
+                                            class="content-item__img rounded-md"
+                                            src="/images/img-gallery-7.jpeg"
+                                            alt="Gallery 7"
+                                        />
+                                    </div>
+                                </div>
+
+                                <!-- Gallery Item 8 -->
+                                <div class="content-item">
+                                    <!-- Gallery Item 8 -> Description -->
+                                    <div class="content-item__desc">
+                                        <p class="text-xl text-secondary">
+                                            Eventually, I stepped into a
+                                            full-fledged role as a Software
+                                            Engineer. I began to take ownership
+                                            of entire systems, mentor junior
+                                            developers, and contribute to
+                                            meaningful projects. I saw the
+                                            impact of my work in real users’
+                                            lives. Every bug fixed, every
+                                            feature deployed was a step forward
+                                            in this journey. This phase is where
+                                            I combined all my past learning into
+                                            practice and matured into someone
+                                            who could build, lead, and innovate
+                                            with confidence.
+                                        </p>
+                                    </div>
+
+                                    <!-- Gallery Item 8 -> Image -->
+                                    <div class="content-item__wrapper">
+                                        <img
+                                            class="content-item__img rounded-md"
+                                            src="/images/img-gallery-8.jpeg"
+                                            alt="Gallery 8"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Button next -->
+                            <button
+                                onclick="plusSlides(1)"
+                                class="nav-button nav-button--right bg-html rounded-full"
+                            >
+                                <img
+                                    class="right"
+                                    src="/images/ic-arrow-right-48.png"
+                                    alt="arrow left"
+                                />
+                            </button>
+
+                            <!-- Carousel Dots -->
+                            <div class="carousel-dots">
+                                <span
+                                    onclick="goToSlide(0)"
+                                    class="dot active bg-html rounded-full"
+                                ></span>
+                                <span
+                                    onclick="goToSlide(1)"
+                                    class="dot bg-white rounded-full"
+                                ></span>
+                                <span
+                                    onclick="goToSlide(2)"
+                                    class="dot bg-white rounded-full"
+                                ></span>
+                                <span
+                                    onclick="goToSlide(3)"
+                                    class="dot bg-white rounded-full"
+                                ></span>
+                                <span
+                                    onclick="goToSlide(4)"
+                                    class="dot bg-white rounded-full"
+                                ></span>
+                                <span
+                                    onclick="goToSlide(5)"
+                                    class="dot bg-white rounded-full"
+                                ></span>
+                                <span
+                                    onclick="goToSlide(6)"
+                                    class="dot bg-white rounded-full"
+                                ></span>
+                                <span
+                                    onclick="goToSlide(7)"
+                                    class="dot bg-white rounded-full"
+                                ></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="mt-4 bg-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-12">
+                        <div class="footer">
+                            <div class="footer__social-container">
+                                <img
+                                    title="Facebook"
+                                    class="footer__social-item"
+                                    src="/images/ic-facebook-48.png"
+                                    alt="ic-facebook"
+                                />
+                                <img
+                                    title="Instagram"
+                                    class="footer__social-item"
+                                    src="/images/ic-instagram-48.png"
+                                    alt="ic-facebook"
+                                />
+                                <img
+                                    title="Twitter"
+                                    class="footer__social-item"
+                                    src="/images/ic-twitter-48.png"
+                                    alt="ic-facebook"
+                                />
+                                <img
+                                    title="Linkedin"
+                                    class="footer__social-item"
+                                    src="/images/ic-linkedin-48.png"
+                                    alt="ic-facebook"
+                                />
+                            </div>
+                            <div class="footer__title font-bold text-lg">
+                                Copyright ©2024. Daniel Tran - Software
+                                Engineer.<br class="br-xs" />
+                                All rights reserved
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/js/carousel.js"></script>
     </body>
 </html>

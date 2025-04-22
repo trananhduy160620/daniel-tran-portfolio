@@ -1,3 +1,4 @@
+/* ==== HomePage (index.html) ==== */
 /* ==== Header ==== */
 .header {
     padding: 20px 0;
@@ -5,11 +6,22 @@
     justify-content: space-between;
     align-items: center;
 }
+.header__logo {
+    flex: 1 1 25%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
 
 /* header__navbar */
 .header__navbar {
+    flex-grow: 1;
     display: flex;
+    justify-content: center;
+    align-items: self-start;
     gap: 48px;
+    margin: 0 auto;
+    padding: 0 -40px;
 }
 
 /* header__navbar-item */
@@ -36,6 +48,7 @@
 }
 
 .popup-wrapper {
+    flex: 1 1 25%;
     position: relative;
     display: inline-block;
 }
@@ -79,7 +92,7 @@
 .popup-content {
     position: absolute;
     top: 100%;
-    right: 0;
+    left: 0;
     background-color: var(--color-white);
     border: 1px solid #ccc;
     padding: 16px;
@@ -147,6 +160,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 16px 0;
 }
 
 /* avatar-container__img */
@@ -155,15 +169,563 @@
     height: 100%;
     aspect-ratio: 1/1;
     align-self: flex-start;
+    object-fit: cover;
 }
 
+/* ==== List Services ==== */
+/* Add spacing between elements in the List Services */
+.list-services > * + * {
+    margin-top: 2rem;
+}
+
+/* Service Item */
+.service-item {
+    padding: 32px;
+    margin-bottom: 16px;
+}
+
+.service-item > * + * {
+    margin-top: 16px;
+}
+
+.service-item__container {
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+}
+
+/* Service Item -> Image */
+.service-item__img {
+    width: 48px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+/* ==== List Feedback ==== */
+/* List Feedback */
+.list-feedback {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+/* Add spacing between elements in the List Feedback */
+.list-feedback > * + * {
+    margin-top: 16px;
+}
+
+/* Feedback Item */
+.feedback-item {
+    padding: 40px;
+    margin-bottom: 16px;
+}
+
+/* Add spacing between elements in the List Feedback */
+.feedback-item > * + * {
+    margin-top: 16px;
+}
+
+/* Feedback Item -> Wrapper */
+.feedback-item__wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+/* Feedback Item -> Wrapper Image */
+.feedback-item__wrapper-img {
+    width: 100px;
+    height: 100px;
+}
+
+/* feedback-item -> Customer Avatar */
+.feedback-item__customer-avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Rating Wrapper */
+.rating-wrapper {
+    display: flex;
+    gap: 8px;
+}
+
+/* Rating Wrapper -> Item */
+.rating-wrapper__item {
+    width: 20px;
+    height: 20px;
+}
+
+/* Feedback Item -> Content */
+.feedback-item__content {
+    /* height: 100%; */
+    max-height: fit-content;
+}
+
+/* ==== Footer ==== */
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 0;
+}
+
+/* Footer -> Social Container */
+.footer__social-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Footer -> Social Item */
+.footer__social-item {
+    width: 40px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.br-xs {
+    display: none;
+}
+
+/* ==== AboutPage (about.html) ==== */
+/* About */
+.about {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* Add spacing between elements in the List Feedback */
+.about > * + * {
+    margin-top: 16px;
+}
+
+/* About Me -> Image */
+.about-me__img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* About Me -> Desc Wrapper */
+.about-me__desc-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* ==== SkillsPage (skills.html) ==== */
+/* Skill Item -> Wrapper */
+.skill-item__wrapper > * + * {
+    margin-top: 16px;
+}
+
+/* Skill Subitem */
+.skill-subitem {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+/* ==== ProjectsPage (projects.html) ==== */
+/* Projects */
+.projects {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* project-item-wrapper */
+.project-item-wrapper {
+    padding: 10px;
+}
+
+/* Project Item Wrapper */
+/* Left side: image wrapper */
+.project-item__img-wrapper {
+    flex: 1 1 45%;
+    max-width: 500px;
+}
+
+/* Project Item -> Image */
+.project-item__img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2/1;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+/* Project Item -> Info */
+.project-item__info {
+    height: 100%;
+    flex: 1 1 45%;
+}
+
+.project-item__info > * + * {
+    margin-top: 8px;
+}
+
+/* Project Item -> actions */
+.project-item__actions > * + * {
+    margin-left: 8px;
+}
+
+/* Project Item -> btn */
+.project-item__btn {
+    padding: 4px 16px;
+}
+
+/* ==== ContactPage (contact.html) ==== */
+/* Contact */
+.contact {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+/* Add spacing between the elements */
+.contact > * + * {
+    margin-top: 16px;
+}
+
+/* contact__form */
+.contact__form > * + * {
+    margin-top: 16px;
+}
+
+/* contact__input-name */
+.contact__input {
+    width: 100%;
+    height: 40px;
+    padding: 8px 16px;
+    outline: 1px solid #000;
+    border-radius: 8px;
+}
+
+/* contact__input-select */
+.contact__input-select {
+    background-image: url("/images/ic-dropdown-48.png");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+}
+
+/* contact__input-area */
+.contact__input-area {
+    resize: none;
+    height: 200px;
+}
+
+/* contact-input-area-wrapper */
+.contact-input-area-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* contact__btn-wrapper */
+.contact__btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+}
+
+/* contact__submit-btn */
+.contact__submit-btn {
+    width: 25%;
+    padding: 4px 32px;
+}
+
+/* ==== GalleryPage (gallery.html) ==== */
+/* Gallery */
+.gallery > * + * {
+    margin-top: 16px;
+}
+
+/* Carousel */
+.carousel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+/* Nav Button */
+.nav-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-button--left,
+.nav-button--right {
+    padding: 16px;
+    margin: 0 16px;
+    cursor: pointer;
+}
+
+.left,
+.right {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Carousel Content */
+.carousel-content {
+    width: 100%;
+    padding: 32px 0;
+    transition: transform 0.4s ease-in-out;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    position: relative;
+}
+
+/* Content Item */
+.content-item {
+    display: none;
+}
+
+.content-item--active {
+    display: flex;
+    gap: 32px;
+    position: relative;
+    min-width: 100%;
+    flex-shrink: 0;
+    transform: translateX(0);
+    transition: transform 0.4s ease-in-out;
+    scroll-snap-align: center;
+}
+
+/* Content Item -> Description */
+.content-item__desc {
+    flex: 1;
+    align-self: center;
+    padding: 16px 32px;
+}
+
+/* Content Item -> Wrapper */
+.content-item__wrapper {
+    /* flex: 1; */
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Content Item -> Wrapper -> Image */
+.content-item__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* carousel-dots */
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 8px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.dot {
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* ==== CulturePage (culture.html) ==== */
+/* Add spacing between the elements */
+.culture > * + * {
+    margin-top: 16px;
+}
+
+.culture__content-wrapper > * + * {
+    margin-top: 48px;
+}
+
+/* ==== Where I Come From ==== */
+/* Add spacing between the elements */
+.my-background > * + * {
+    margin-top: 12px;
+}
+
+/* my-background__img-wrapper */
+.my-background__img-wrapper {
+    height: 900px;
+}
+
+.my-background__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ==== Flavours of My Homeland ==== */
+.my-flavours > .container {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.my-flavours > * + * {
+    margin-top: 12px;
+}
+
+.my-flavours__img-wrapper {
+    width: 100%;
+    aspect-ratio: 2/3;
+    margin-bottom: 16px;
+}
+
+.my-flavours__img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.my-flavours__food-name,
+.my-background__desc,
+.my-tradition__desc,
+.my-culture-values__desc {
+    margin-top: 8px;
+}
+
+/* ==== Traditions That Shapped Me ==== */
+.my-tradition > * + * {
+    margin-top: 12px;
+}
+
+.my-tradition__img-wrapper {
+    height: 900px;
+}
+
+.my-tradition__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ==== Culture Values in My Work ==== */
+.my-culture-values {
+    margin-bottom: 18px;
+}
+
+.my-culture-values > * + * {
+    margin-top: 12px;
+}
+
+/* my-background__img-wrapper */
+.my-culture-values__img-wrapper {
+    height: 900px;
+}
+
+.my-culture-values__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ==== InternshipPage (internship.html) ==== */
+/* Internship */
+.internship > * + * {
+    margin-top: 16px;
+}
+
+/* about__content-wrapper */
+.about__content-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+/* about__img-wrapper */
+.about__img-wrapper,
+.learn-title__img-wrapper {
+    width: 100%;
+    height: 450px;
+}
+
+/* about__img */
+.about__img,
+.learn-title__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ==== InternshipPage (internship.html) ==== */
+/* Learn Title */
+.learn-title,
+.my-role-title {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+/* My Role and Responsibility */
+.my-role__desc {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+/* my-role__img-wrapper */
+.my-role__img-wrapper {
+    width: 100%;
+    height: 300px;
+}
+
+/* my-role__img */
+.my-role__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ==== Responsive ==== */
 /* Only Small Devices */
 @media (max-width: 575.98px) {
+    /* ==== Header ==== */
     /* header__navbar */
     .header__navbar {
         display: none;
     }
 
+    .header__logo {
+        flex: 1;
+        justify-content: flex-start;
+    }
+
+    .popup-wrapper {
+        display: inline-flex;
+        justify-content: flex-end;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    /* ==== Banner ==== */
     /* Intro Container */
     .intro {
         padding: 15px 0;
@@ -171,21 +733,202 @@
 
     /* Intro Hire Me Button */
     .intro-hire-me-btn {
-        width: 25%;
-        padding: 5px 10px;
+        width: 35%;
+        padding: 5px 0px;
     }
 
     /* Intro Download CV Button */
     .intro-download-cv-btn {
-        width: 25%;
-        padding: 5px 10px;
+        width: 35%;
+        padding: 5px 0px;
+    }
+
+    /* ===== Feedback Content ==== */
+    /* List Feedback */
+    .list-feedback {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    /* Feedback Item */
+    .feedback-item {
+        padding: 20px;
+        margin-bottom: 16px;
+    }
+
+    /* Feedback Item -> Content */
+    .feedback-item__content {
+        max-height: fit-content;
+    }
+
+    /* Feedback Item -> Wrapper */
+    .feedback-item__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* Feedback Item -> Wrapper Image */
+    .feedback-item__wrapper-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* feedback-item -> Customer Avatar */
+    .feedback-item__customer-avatar {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* ==== Footer ==== */
+    /* Footer -> Title */
+    .footer__title {
+        text-align: center;
+    }
+
+    .br-xs {
+        display: inline-block;
+    }
+
+    /* ==== AboutPage (about.html) ==== */
+    /* About Me -> Image Wrapper */
+    .about-me__img-wrapper {
+        margin-bottom: 4rem;
+    }
+
+    /* About Me -> Desc Wrapper */
+    .about-me__desc-wrapper {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    /* ==== ProjectsPage (projects.html) ==== */
+    /* Projects */
+    .projects {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    /* Project Item Wrapper */
+    .project-item-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    /* Project Item -> Image */
+    .project-item__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Project Item -> Info */
+    .project-item__info > * + * {
+        margin-top: 8px;
+    }
+
+    /* Project Item -> actions */
+    .project-item__actions > * + * {
+        margin-left: 8px;
+    }
+
+    /* Project Item -> btn */
+    .project-item__btn {
+        padding: 4px 16px;
+    }
+
+    /* ==== ContactPage (contact.html) ==== */
+    /* Contact */
+    .contact {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* contact__input-email */
+    .contact__input-email {
+        margin-top: 16px;
+    }
+
+    /* contact__input-select */
+    .contact__input-select {
+        margin-top: 16px;
+    }
+
+    /* ==== GalleryPage (gallery.html) ==== */
+    .carousel-content {
+        width: 100%;
+        padding: 0 0;
+        margin-bottom: 106px;
+    }
+
+    .content-item--active {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 32px;
+        position: relative;
+        min-width: 100%;
+        flex-shrink: 0;
+        transform: translateX(0);
+        transition: transform 0.4s ease-in-out;
+        scroll-snap-align: center;
+    }
+
+    .nav-button {
+        display: none;
+        position: absolute;
+        z-index: 2;
+        border-radius: 0;
+    }
+
+    .nav-button--left {
+        left: 10px;
+    }
+
+    .nav-button--right {
+        right: 10px;
+    }
+
+    .nav-button--left,
+    .nav-button--right {
+        padding: 8px;
+        margin: 0 16px;
+        cursor: pointer;
+    }
+
+    .learn-title__content-desc {
+        margin-top: 8px;
     }
 }
 
 /* SM Breakpoint */
-@media (min-width: 576px) {
+@media (min-width: 576px) and (max-width: 765px) {
+    /* ==== Header ==== */
     /* header__navbar */
     .header__navbar {
+        display: none;
+    }
+
+    .header__logo {
+        flex: 1;
+        justify-content: flex-start;
+    }
+
+    .popup-wrapper {
+        display: inline-flex;
+        justify-content: flex-end;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .desktop {
         display: none;
     }
 
@@ -204,14 +947,132 @@
         width: 25%;
         padding: 5px 10px;
     }
+
+    /* ==== AboutPage (about.html) ==== */
+    /* About Me -> Image Wrapper */
+    .about-me__img-wrapper {
+        margin-bottom: 4rem;
+    }
+
+    /* About Me -> Desc Wrapper */
+    .about-me__desc-wrapper {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    /* ==== ProjectsPage (projects.html) ==== */
+
+    /* Project Item Wrapper */
+    .project-item-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    /* Project Item -> Image */
+    .project-item__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Project Item -> Info */
+    .project-item__info > * + * {
+        margin-top: 8px;
+    }
+
+    /* Project Item -> actions */
+    .project-item__actions > * + * {
+        margin-left: 8px;
+    }
+
+    /* Project Item -> btn */
+    .project-item__btn {
+        padding: 4px 16px;
+    }
+
+    /* ==== ContactPage (contact.html) ==== */
+    /* Contact */
+    .contact {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* contact__input-email */
+    .contact__input-email {
+        margin-top: 16px;
+    }
+
+    /* contact__input-select */
+    .contact__input-select {
+        margin-top: 16px;
+    }
+
+    /* ==== GalleryPage (gallery.html) ==== */
+    .carousel-content {
+        width: 100%;
+        padding: 0 0;
+        margin-bottom: 106px;
+    }
+
+    .content-item--active {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 32px;
+        position: relative;
+        min-width: 100%;
+        flex-shrink: 0;
+        transform: translateX(0);
+        transition: transform 0.4s ease-in-out;
+        scroll-snap-align: center;
+    }
+
+    .nav-button {
+        display: none;
+        position: absolute;
+        z-index: 2;
+        border-radius: 0;
+    }
+
+    .nav-button--left {
+        left: 10px;
+    }
+
+    .nav-button--right {
+        right: 10px;
+    }
+
+    .nav-button--left,
+    .nav-button--right {
+        padding: 8px;
+        margin: 0 16px;
+        cursor: pointer;
+    }
+
+    /* learn-title__content-desc */
+    .learn-title__content-desc {
+        margin-top: 8px;
+    }
 }
 
 /* MD Breakpoint */
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* ==== Header ==== */
     /* header__navbar */
     .header__navbar {
         display: flex;
         gap: 32px;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
     }
 
     /* Intro Container */
@@ -229,17 +1090,122 @@
     .intro-download-cv-btn {
         width: 35%;
         padding: 5px 0px;
+    }
+
+    /* ===== Feedback Content ==== */
+    /* Feedback Item */
+    .feedback-item {
+        padding: 20px;
+        margin-bottom: 16px;
+    }
+
+    /* Feedback Item -> Content */
+    .feedback-item__content {
+        max-height: fit-content;
+    }
+
+    /* Feedback Item -> Wrapper */
+    .feedback-item__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* Feedback Item -> Wrapper Image */
+    .feedback-item__wrapper-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* feedback-item -> Customer Avatar */
+    .feedback-item__customer-avatar {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* ==== ProjectsPage (projecs.html) ==== */
+    /* Project Item Wrapper */
+    .project-item-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    /* Project Item -> btn */
+    .project-item__btn {
+        padding: 4px 16px;
+    }
+
+    /* ==== ContactPage (contact.html) ==== */
+    /* Contact */
+    .contact {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* ==== GalleryPage (gallery.html) ==== */
+    .carousel-content {
+        width: 100%;
+        padding: 0 0;
+        margin-bottom: 106px;
+    }
+
+    .content-item--active {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 32px;
+        position: relative;
+        min-width: 100%;
+        flex-shrink: 0;
+        transform: translateX(0);
+        transition: transform 0.4s ease-in-out;
+        scroll-snap-align: center;
+    }
+
+    .nav-button {
+        display: none;
+        position: absolute;
+        z-index: 2;
+        border-radius: 0;
+    }
+
+    .nav-button--left {
+        left: 10px;
+    }
+
+    .nav-button--right {
+        right: 10px;
+    }
+
+    .nav-button--left,
+    .nav-button--right {
+        padding: 8px;
+        margin: 0 16px;
+        cursor: pointer;
     }
 }
 
 /* LG Breakpoint */
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* ==== Header ==== */
     /* header__navbar */
     .header__navbar {
         display: flex;
         gap: 32px;
     }
 
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    /* ==== Banner ==== */
     /* Intro Container */
     .intro {
         padding: 15px 0;
@@ -256,16 +1222,116 @@
         width: 35%;
         padding: 5px 0px;
     }
+
+    /* ===== Feedback Content ==== */
+    /* Feedback Item */
+    .feedback-item {
+        padding: 20px;
+        margin-bottom: 16px;
+    }
+
+    /* Feedback Item -> Content */
+    .feedback-item__content {
+        max-height: fit-content;
+    }
+
+    /* Feedback Item -> Wrapper */
+    .feedback-item__wrapper {
+        display: flex;
+        gap: 20px;
+    }
+
+    /* Feedback Item -> Wrapper Image */
+    .feedback-item__wrapper-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* feedback-item -> Customer Avatar */
+    .feedback-item__customer-avatar {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* ===== ProjectsPage (projects.html) ==== */
+    .projects {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    /* Project Item Wrapper */
+    .project-item-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    /* Project Item -> btn */
+    .project-item__btn {
+        padding: 4px 16px;
+    }
+
+    /* ==== GalleryPage (gallery.html) ==== */
+    .carousel-content {
+        width: 100%;
+        padding: 0 0;
+        margin-bottom: 106px;
+    }
+
+    .content-item--active {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 32px;
+        position: relative;
+        min-width: 100%;
+        flex-shrink: 0;
+        transform: translateX(0);
+        transition: transform 0.4s ease-in-out;
+        scroll-snap-align: center;
+    }
+
+    .nav-button {
+        display: none;
+        position: absolute;
+        z-index: 2;
+        border-radius: 0;
+    }
+
+    .nav-button--left {
+        left: 10px;
+    }
+
+    .nav-button--right {
+        right: 10px;
+    }
+
+    .nav-button--left,
+    .nav-button--right {
+        padding: 8px;
+        margin: 0 16px;
+        cursor: pointer;
+    }
 }
 
 /* XL Breakpoint*/
-@media (min-width: 1199px) {
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    /* ==== Header ==== */
     /* header__navbar */
     .header__navbar {
         display: flex;
         gap: 32px;
     }
 
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    /* ==== Banner ==== */
     /* Intro Hire Me Button */
     .intro-hire-me-btn {
         width: 35%;
@@ -276,17 +1342,86 @@
     .intro-download-cv-btn {
         width: 35%;
         padding: 5px 0px;
+    }
+
+    /* ===== ProjectsPage (projects.html) ==== */
+    .projects {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    /* Project Item Wrapper */
+    .project-item-wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+    }
+
+    /* Project Item -> btn */
+    .project-item__btn {
+        padding: 4px 16px;
+    }
+
+    /* ==== GalleryPage (gallery.html) ==== */
+    .carousel-content {
+        width: 100%;
+        padding: 0 0;
+        margin-bottom: 106px;
+    }
+
+    .content-item--active {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 32px;
+        position: relative;
+        min-width: 100%;
+        flex-shrink: 0;
+        transform: translateX(0);
+        transition: transform 0.4s ease-in-out;
+        scroll-snap-align: center;
+    }
+
+    .nav-button {
+        display: none;
+        position: absolute;
+        z-index: 2;
+        border-radius: 0;
+    }
+
+    .nav-button--left {
+        left: 10px;
+    }
+
+    .nav-button--right {
+        right: 10px;
+    }
+
+    .nav-button--left,
+    .nav-button--right {
+        padding: 8px;
+        margin: 0 16px;
+        cursor: pointer;
     }
 }
 
 /* XXL Breakpoint*/
-@media (min-width: 1900px) {
+@media (min-width: 1400px) {
+    /* ==== Header ==== */
     /* header__navbar */
     .header__navbar {
         display: flex;
         gap: 32px;
     }
 
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    /* ==== Banner ==== */
     /* Intro Hire Me Button */
     .intro-hire-me-btn {
         width: 15%;
@@ -297,5 +1432,88 @@
     .intro-download-cv-btn {
         width: 15%;
         padding: 5px 15px;
+    }
+
+    /* ===== ProjectsPage (projects.html) ==== */
+    .projects {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    /* Project Item Wrapper */
+    .project-item-wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+    }
+
+    /* Project Item -> btn */
+    .project-item__btn {
+        padding: 4px 16px;
+    }
+
+    /* ==== GalleryPage (gallery.html) ==== */
+    /* Nav Button */
+    .nav-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-button--left,
+    .nav-button--right {
+        padding: 16px;
+        margin: 0 16px;
+        cursor: pointer;
+    }
+
+    /* Carousel Content */
+    .carousel-content {
+        width: 100%;
+        padding: 32px 0;
+        transition: transform 0.4s ease-in-out;
+        overflow-x: hidden;
+        scroll-snap-type: x mandatory;
+        position: relative;
+    }
+
+    /* Content Item */
+    .content-item {
+        display: none;
+    }
+
+    .content-item--active {
+        display: flex;
+        gap: 32px;
+        position: relative;
+        min-width: 100%;
+        flex-shrink: 0;
+        transform: translateX(0);
+        transition: transform 0.4s ease-in-out;
+        scroll-snap-align: center;
+    }
+
+    /* Content Item -> Description */
+    .content-item__desc {
+        flex: 1;
+        align-self: center;
+        padding: 16px 32px;
+    }
+
+    /* Content Item -> Wrapper */
+    .content-item__wrapper {
+        flex: 1;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Content Item -> Wrapper -> Image */
+    .content-item__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
     }
 }
