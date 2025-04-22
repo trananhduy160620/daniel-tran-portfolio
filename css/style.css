@@ -173,10 +173,6 @@
 }
 
 /* ==== List Services ==== */
-/* List Services */
-.list-services {
-}
-
 /* Add spacing between elements in the List Services */
 .list-services > * + * {
     margin-top: 2rem;
@@ -203,17 +199,6 @@
     width: 48px;
     aspect-ratio: 1/1;
     object-fit: cover;
-}
-
-/* Service Item -> Title */
-.service-item__title {
-    /* max-height: 70px; */
-}
-
-/* Service Item -> Description */
-.service-item__desc {
-    /* height: 100%; */
-    /* max-height: 200px; */
 }
 
 /* ==== List Feedback ==== */
@@ -256,18 +241,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-/* Feedback Item -> wrapper-about */
-.feedback-item__wrapper-about {
-}
-
-/* Feedback Item -> Customer Name */
-.feedback-item__customer-name {
-}
-
-/* Feedback Item -> Customer Job Title */
-.feedback-item__customer-job-title {
 }
 
 /* Rating Wrapper */
@@ -315,10 +288,6 @@
     cursor: pointer;
 }
 
-/* Footer -> Title */
-.footer__title {
-}
-
 .br-xs {
     display: none;
 }
@@ -333,11 +302,6 @@
 /* Add spacing between elements in the List Feedback */
 .about > * + * {
     margin-top: 16px;
-}
-
-/* About Me -> Image Wrapper */
-.about-me__img-wrapper {
-    /* margin-bottom: 4rem; */
 }
 
 /* About Me -> Image */
@@ -357,12 +321,7 @@
 }
 
 /* ==== SkillsPage (skills.html) ==== */
-/* Skills */
-
 /* Skill Item -> Wrapper */
-.skill-item__wrapper {
-}
-
 .skill-item__wrapper > * + * {
     margin-top: 16px;
 }
@@ -375,18 +334,6 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 16px;
-}
-
-/* Frontend Skills */
-.frontend {
-}
-
-/* Backend Skills */
-.backend {
-}
-
-/* Mobile Skills */
-.mobile {
 }
 
 /* ==== ProjectsPage (projects.html) ==== */
@@ -435,14 +382,6 @@
 /* Project Item -> btn */
 .project-item__btn {
     padding: 4px 16px;
-}
-
-/* Go Live */
-.go-live {
-}
-
-/* Go Github */
-.go-github {
 }
 
 /* ==== ContactPage (contact.html) ==== */
@@ -504,11 +443,6 @@
 .contact__submit-btn {
     width: 25%;
     padding: 4px 32px;
-}
-
-/* error-message */
-.error-message {
-    /* padding: 0 16px; */
 }
 
 /* ==== GalleryPage (gallery.html) ==== */
@@ -676,9 +610,6 @@
 }
 
 /* ==== Traditions That Shapped Me ==== */
-.my-tradition {
-}
-
 .my-tradition > * + * {
     margin-top: 12px;
 }
@@ -708,6 +639,60 @@
 }
 
 .my-culture-values__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ==== InternshipPage (internship.html) ==== */
+/* Internship */
+.internship > * + * {
+    margin-top: 16px;
+}
+
+/* about__content-wrapper */
+.about__content-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+/* about__img-wrapper */
+.about__img-wrapper,
+.learn-title__img-wrapper {
+    width: 100%;
+    height: 450px;
+}
+
+/* about__img */
+.about__img,
+.learn-title__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ==== InternshipPage (internship.html) ==== */
+/* Learn Title */
+.learn-title,
+.my-role-title {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+/* My Role and Responsibility */
+.my-role__desc {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+/* my-role__img-wrapper */
+.my-role__img-wrapper {
+    width: 100%;
+    height: 300px;
+}
+
+/* my-role__img */
+.my-role__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -836,12 +821,6 @@
         gap: 32px;
     }
 
-    /* Project Item -> Image Wrapper */
-    .project-item__img-wrapper {
-        /* width: 100%;
-        height: 300px; */
-    }
-
     /* Project Item -> Image */
     .project-item__img {
         width: 100%;
@@ -862,14 +841,6 @@
     /* Project Item -> btn */
     .project-item__btn {
         padding: 4px 16px;
-    }
-
-    /* Go Live */
-    .go-live {
-    }
-
-    /* Go Github */
-    .go-github {
     }
 
     /* ==== ContactPage (contact.html) ==== */
@@ -911,8 +882,6 @@
     .nav-button {
         display: none;
         position: absolute;
-        /* bottom: 20px; */
-        /* height: 100%; */
         z-index: 2;
         border-radius: 0;
     }
@@ -930,6 +899,10 @@
         padding: 8px;
         margin: 0 16px;
         cursor: pointer;
+    }
+
+    .learn-title__content-desc {
+        margin-top: 8px;
     }
 }
 
@@ -991,9 +964,6 @@
     }
 
     /* ==== ProjectsPage (projects.html) ==== */
-    /* Projects */
-    .project {
-    }
 
     /* Project Item Wrapper */
     .project-item-wrapper {
@@ -1022,14 +992,6 @@
     /* Project Item -> btn */
     .project-item__btn {
         padding: 4px 16px;
-    }
-
-    /* Go Live */
-    .go-live {
-    }
-
-    /* Go Github */
-    .go-github {
     }
 
     /* ==== ContactPage (contact.html) ==== */
@@ -1071,8 +1033,6 @@
     .nav-button {
         display: none;
         position: absolute;
-        /* bottom: 20px; */
-        /* height: 100%; */
         z-index: 2;
         border-radius: 0;
     }
@@ -1090,6 +1050,11 @@
         padding: 8px;
         margin: 0 16px;
         cursor: pointer;
+    }
+
+    /* learn-title__content-desc */
+    .learn-title__content-desc {
+        margin-top: 8px;
     }
 }
 
@@ -1203,8 +1168,6 @@
     .nav-button {
         display: none;
         position: absolute;
-        /* bottom: 20px; */
-        /* height: 100%; */
         z-index: 2;
         border-radius: 0;
     }
@@ -1259,8 +1222,6 @@
         width: 35%;
         padding: 5px 0px;
     }
-
-    /* ==== List Services ==== */
 
     /* ===== Feedback Content ==== */
     /* Feedback Item */
@@ -1333,8 +1294,6 @@
     .nav-button {
         display: none;
         position: absolute;
-        /* bottom: 20px; */
-        /* height: 100%; */
         z-index: 2;
         border-radius: 0;
     }
@@ -1425,8 +1384,6 @@
     .nav-button {
         display: none;
         position: absolute;
-        /* bottom: 20px; */
-        /* height: 100%; */
         z-index: 2;
         border-radius: 0;
     }

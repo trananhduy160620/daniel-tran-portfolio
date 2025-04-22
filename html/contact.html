@@ -13,6 +13,7 @@
         <title>Contact - Daniel Tran Portfolio</title>
     </head>
     <body>
+        <!-- Header -->
         <div class="bg-main">
             <div class="container">
                 <div class="row">
@@ -84,6 +85,7 @@
                                 <div
                                     class="popup-content bg-white border-1 border-secondary rounded-sm"
                                 >
+                                    <!-- Component for desktop -->
                                     <ul class="popup-content__list desktop">
                                         <li class="popup-content__item">
                                             <a
@@ -107,6 +109,7 @@
                                             >
                                         </li>
                                     </ul>
+                                    <!-- Component for mobile -->
                                     <ul class="popup-content__list mobile">
                                         <li class="popup-content__item">
                                             <a
@@ -185,25 +188,28 @@
                 <div class="container contact__form">
                     <div class="row">
                         <div class="col-12 col-md-6">
-                            <!-- <p id="error-name" class="error-message text-red text-sm"></p> -->
+                            <!-- Input for name -->
                             <input
                                 id="name"
                                 class="contact__input border-2 border-black"
                                 placeholder="Name"
                                 type="text"
                             />
+                            <!-- Error message for name -->
                             <p
                                 id="error-name"
                                 class="error-message text-red text-sm"
                             ></p>
                         </div>
                         <div class="col-12 col-md-6">
+                            <!-- Input for email -->
                             <input
                                 id="email"
                                 class="contact__input contact__input-email border-2 border-black"
                                 placeholder="Email"
                                 type="email"
                             />
+                            <!-- Error message for email -->
                             <p
                                 id="error-email"
                                 class="error-message text-red"
@@ -212,18 +218,21 @@
                     </div>
                     <div class="row">
                         <div class="col-12 col-md-6">
+                            <!-- Input for phone -->
                             <input
                                 id="phone"
                                 class="contact__input border-2 border-black"
                                 placeholder="Phone Number"
                                 type="text"
                             />
+                            <!-- Error message for phone -->
                             <p
                                 id="error-phone"
                                 class="error-message text-red"
                             ></p>
                         </div>
                         <div class="col-12 col-md-6">
+                            <!-- Select for services -->
                             <select
                                 class="contact__input contact__input-select border-2 border-black text-secondary"
                                 id="services"
@@ -251,6 +260,7 @@
                                     Web Optimization
                                 </option>
                             </select>
+                            <!-- Error message for serevices -->
                             <p
                                 id="error-services"
                                 class="error-message text-red"
@@ -259,6 +269,7 @@
                     </div>
                     <div class="row">
                         <div class="col-12 col-md-12">
+                            <!-- TextArea for project details -->
                             <textarea
                                 class="contact__input contact__input-area border-2 border-black"
                                 name=""
@@ -268,10 +279,12 @@
                                 placeholder="Project Details..."
                             ></textarea>
                             <div class="contact-input-area-wrapper">
+                                <!-- Error message for project details -->
                                 <p
                                     id="error-project-details"
                                     class="error-project-details text-red"
                                 ></p>
+                                <!-- Word count message for project details -->
                                 <p id="char-count" class="text-right">
                                     0/200 word(s)
                                 </p>
@@ -279,6 +292,7 @@
                         </div>
                         <div class="col-12 col-md-12">
                             <div class="contact__btn-wrapper">
+                                <!-- Submit button -->
                                 <button
                                     class="contact__submit-btn bg-html text-white text-md rounded-sm"
                                     type="submit"
