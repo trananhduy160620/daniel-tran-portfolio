@@ -616,6 +616,103 @@
     transition: background-color 0.3s ease;
 }
 
+/* ==== CulturePage (culture.html) ==== */
+/* Add spacing between the elements */
+.culture > * + * {
+    margin-top: 16px;
+}
+
+.culture__content-wrapper > * + * {
+    margin-top: 48px;
+}
+
+/* ==== Where I Come From ==== */
+/* Add spacing between the elements */
+.my-background > * + * {
+    margin-top: 12px;
+}
+
+/* my-background__img-wrapper */
+.my-background__img-wrapper {
+    height: 900px;
+}
+
+.my-background__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ==== Flavours of My Homeland ==== */
+.my-flavours > .container {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.my-flavours > * + * {
+    margin-top: 12px;
+}
+
+.my-flavours__img-wrapper {
+    width: 100%;
+    aspect-ratio: 2/3;
+    margin-bottom: 16px;
+}
+
+.my-flavours__img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.my-flavours__food-name,
+.my-background__desc,
+.my-tradition__desc,
+.my-culture-values__desc {
+    margin-top: 8px;
+}
+
+/* ==== Traditions That Shapped Me ==== */
+.my-tradition {
+}
+
+.my-tradition > * + * {
+    margin-top: 12px;
+}
+
+.my-tradition__img-wrapper {
+    height: 900px;
+}
+
+.my-tradition__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ==== Culture Values in My Work ==== */
+.my-culture-values {
+    margin-bottom: 18px;
+}
+
+.my-culture-values > * + * {
+    margin-top: 12px;
+}
+
+/* my-background__img-wrapper */
+.my-culture-values__img-wrapper {
+    height: 900px;
+}
+
+.my-culture-values__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /* ==== Responsive ==== */
 /* Only Small Devices */
 @media (max-width: 575.98px) {
