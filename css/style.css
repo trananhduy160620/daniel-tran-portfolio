@@ -1413,6 +1413,11 @@
         gap: 32px;
     }
 
+    /* mobile-skills */
+    .mobile-skills {
+        display: block;
+    }
+
     .mobile {
         display: none;
     }
