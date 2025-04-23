@@ -92,7 +92,7 @@
 .popup-content {
     position: absolute;
     top: 100%;
-    left: 0;
+    right: auto;
     background-color: var(--color-white);
     border: 1px solid #ccc;
     padding: 16px;
@@ -1075,6 +1075,10 @@
         display: block;
     }
 
+    .popup-content {
+        left: -130%;
+    }
+
     /* Intro Container */
     .intro {
         padding: 15px 0;
@@ -1205,6 +1209,10 @@
         display: block;
     }
 
+    .popup-content {
+        left: -60%;
+    }
+
     /* ==== Banner ==== */
     /* Intro Container */
     .intro {
@@ -1331,6 +1339,10 @@
         display: block;
     }
 
+    .popup-content {
+        left: -25%;
+    }
+
     /* ==== Banner ==== */
     /* Intro Hire Me Button */
     .intro-hire-me-btn {
@@ -1424,6 +1436,10 @@
 
     .desktop {
         display: block;
+    }
+
+    .popup-content {
+        left: -25%;
     }
 
     /* ==== Banner ==== */
