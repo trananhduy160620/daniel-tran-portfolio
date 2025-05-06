@@ -91,7 +91,7 @@
 /* Popup style */
 .popup-content {
     position: absolute;
-    top: 100%;
+    top: calc(100% + 5px);
     right: auto;
     background-color: var(--color-white);
     border: 1px solid #ccc;
