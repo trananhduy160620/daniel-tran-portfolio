@@ -51,7 +51,7 @@
         />
         <link rel="stylesheet" href="../css/my-library.css" />
         <link rel="stylesheet" href="../css/style.css" />
-        <title>Contact - Daniel Tran Portfolio</title>
+        <title>About - Daniel Tran Portfolio</title>
     </head>
     <body>
         <!-- Header -->
@@ -63,42 +63,42 @@
                         <div class="header bg-main">
                             <!-- Logo -->
                             <h1 class="header__logo text-xl font-bold">
-                                <a href="../html/index.html"
+                                <a href="./index.html"
                                     >DANIELVERSAL.DEV</a
                                 >
                             </h1>
                             <!-- Navbar -->
                             <ul class="header__navbar">
                                 <li class="header__navbar-item">
-                                    <a class="text-lg" href="../html/index.html"
+                                    <a class="text-lg" href="./index.html"
                                         >Home</a
                                     >
                                 </li>
-                                <li class="header__navbar-item">
-                                    <a class="text-lg" href="../html/about.html"
+                                <li
+                                    class="header__navbar-item navbar-item--active"
+                                >
+                                    <a class="text-lg" href="./about.html"
                                         >About</a
                                     >
                                 </li>
                                 <li class="header__navbar-item">
                                     <a
                                         class="text-lg"
-                                        href="../html/skills.html"
+                                        href="./skills.html"
                                         >Skills</a
                                     >
                                 </li>
                                 <li class="header__navbar-item">
                                     <a
                                         class="text-lg"
-                                        href="../html/projects.html"
+                                        href="./projects.html"
                                         >Projects</a
                                     >
                                 </li>
-                                <li
-                                    class="header__navbar-item navbar-item--active"
-                                >
+                                <li class="header__navbar-item">
                                     <a
                                         class="text-lg"
-                                        href="../html/contact.html"
+                                        href="./contact.html"
                                         >Contact</a
                                     >
                                 </li>
@@ -116,13 +116,13 @@
                                 <label for="popup-toggle" class="popup-button">
                                     <img
                                         class="popup-button__icon--more"
-                                        src="/images/ic-more-48.png"
+                                        src="../images/ic-more-48.png"
                                         alt="more-button"
                                         srcset=""
                                     />
                                     <img
                                         class="popup-button__icon--dropdown"
-                                        src="/images/ic-dropdown-48.png"
+                                        src="../images/ic-dropdown-48.png"
                                         alt="more-button"
                                         srcset=""
                                     />
@@ -137,21 +137,21 @@
                                         <li class="popup-content__item">
                                             <a
                                                 class="text-lg"
-                                                href="../html/gallery.html"
+                                                href="./gallery.html"
                                                 >Gallery</a
                                             >
                                         </li>
                                         <li class="popup-content__item">
                                             <a
                                                 class="text-lg"
-                                                href="../html/culture.html"
+                                                href="./culture.html"
                                                 >Culture</a
                                             >
                                         </li>
                                         <li class="popup-content__item">
                                             <a
                                                 class="text-lg"
-                                                href="../html/internship.html"
+                                                href="./internship.html"
                                                 >Internship</a
                                             >
                                         </li>
@@ -161,56 +161,56 @@
                                         <li class="popup-content__item">
                                             <a
                                                 class="text-lg"
-                                                href="../html/index.html"
+                                                href="./index.html"
                                                 >Home</a
                                             >
                                         </li>
                                         <li class="popup-content__item">
                                             <a
                                                 class="text-lg"
-                                                href="../html/about.html"
+                                                href="./about.html"
                                                 >About</a
                                             >
                                         </li>
                                         <li class="popup-content__item">
                                             <a
                                                 class="text-lg"
-                                                href="../html/skills.html"
+                                                href="./skills.html"
                                                 >Skills</a
                                             >
                                         </li>
                                         <li class="popup-content__item">
                                             <a
                                                 class="text-lg"
-                                                href="../html/projects.html"
+                                                href="./projects.html"
                                                 >Projects</a
                                             >
                                         </li>
                                         <li class="popup-content__item">
                                             <a
                                                 class="text-lg"
-                                                href="../html/contact.html"
+                                                href="./contact.html"
                                                 >Contact</a
                                             >
                                         </li>
                                         <li class="popup-content__item">
                                             <a
                                                 class="text-lg"
-                                                href="../html/gallery.html"
+                                                href="./gallery.html"
                                                 >Gallery</a
                                             >
                                         </li>
                                         <li class="popup-content__item">
                                             <a
                                                 class="text-lg"
-                                                href="../html/culture.html"
+                                                href="./culture.html"
                                                 >Culture</a
                                             >
                                         </li>
                                         <li class="popup-content__item">
                                             <a
                                                 class="text-lg"
-                                                href="../html/internship.html"
+                                                href="./internship.html"
                                                 >Internship</a
                                             >
                                         </li>
@@ -223,134 +223,62 @@
             </div>
         </div>
 
-        <!-- Contact -->
-        <div class="contact mt-4">
-            <h2 class="contact__title text-main text-4xl font-bold text-center">
-                Contact me
-            </h2>
-            <h3 class="contact__subtitle text-xl text-center text-secondary">
-                Cultivating Connections: Reach Out and Connect with Me
+        <!-- About -->
+        <div class="about mt-4 text-center">
+            <h2 class="about__title text-main text-4xl font-bold">About</h2>
+            <h3 class="about__subtitle text-xl text-secondary">
+                Software Engineer and Web Developer Full-stack also mobile
+                Full-stack
             </h3>
-            <form id="contact-form" action="">
-                <div class="container contact__form">
-                    <div class="row">
-                        <div class="col-12 col-md-6">
-                            <!-- Input for name -->
-                            <input
-                                id="name"
-                                class="contact__input border-2 border-black"
-                                placeholder="Name"
-                                type="text"
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="about-me__img-wrapper">
+                            <img
+                                class="about-me__img rounded-sm"
+                                src="../images/img-about-me.png"
+                                alt="about me"
                             />
-                            <!-- Error message for name -->
-                            <p
-                                id="error-name"
-                                class="error-message text-red text-sm"
-                            ></p>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <!-- Input for email -->
-                            <input
-                                id="email"
-                                class="contact__input contact__input-email border-2 border-black"
-                                placeholder="Email"
-                                type="email"
-                            />
-                            <!-- Error message for email -->
-                            <p
-                                id="error-email"
-                                class="error-message text-red"
-                            ></p>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-12 col-md-6">
-                            <!-- Input for phone -->
-                            <input
-                                id="phone"
-                                class="contact__input border-2 border-black"
-                                placeholder="Phone Number"
-                                type="text"
-                            />
-                            <!-- Error message for phone -->
+                    <div class="col-12 col-md-6">
+                        <div class="about-me__desc-wrapper">
                             <p
-                                id="error-phone"
-                                class="error-message text-red"
-                            ></p>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <!-- Select for services -->
-                            <select
-                                class="contact__input contact__input-select border-2 border-black text-secondary"
-                                id="services"
-                                autocomplete=""
+                                class="desc--first text-lg text-justify text-secondary"
                             >
-                                <option disabled selected>
-                                    Service Of Interest
-                                </option>
-                                <option value="Web Development">
-                                    Web Development
-                                </option>
-                                <option value="Mobile App Development">
-                                    Mobile App Development
-                                </option>
-                                <option value="UI/UX Design">
-                                    UI/UX Design
-                                </option>
-                                <option value="API Development">
-                                    API Development
-                                </option>
-                                <option value="App Maintenance">
-                                    App Maintenance
-                                </option>
-                                <option value="Web Optimization">
-                                    Web Optimization
-                                </option>
-                            </select>
-                            <!-- Error message for serevices -->
+                                I'm a passionate IT professional currently in my
+                                second year at Federation University, majoring
+                                in Information Technology. Before moving to
+                                Australia, I earned a Bachelor’s degree in
+                                Computer Science from the University of Science
+                                in Vietnam. During that time, I also worked as
+                                an iOS mobile developer for a year, where I
+                                contributed to building and maintaining
+                                user-friendly mobile applications. This hands-on
+                                experience helped me develop a strong foundation
+                                in coding, problem-solving, and collaborating
+                                within development teams.
+                            </p>
                             <p
-                                id="error-services"
-                                class="error-message text-red"
-                            ></p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 col-md-12">
-                            <!-- TextArea for project details -->
-                            <textarea
-                                class="contact__input contact__input-area border-2 border-black"
-                                name=""
-                                id="project-details"
-                                cols="30"
-                                rows="10"
-                                placeholder="Project Details..."
-                            ></textarea>
-                            <div class="contact-input-area-wrapper">
-                                <!-- Error message for project details -->
-                                <p
-                                    id="error-project-details"
-                                    class="error-project-details text-red"
-                                ></p>
-                                <!-- Word count message for project details -->
-                                <p id="char-count" class="text-right">
-                                    0/200 word(s)
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-12">
-                            <div class="contact__btn-wrapper">
-                                <!-- Submit button -->
-                                <button
-                                    class="contact__submit-btn bg-html text-white text-md rounded-sm"
-                                    type="submit"
-                                >
-                                    Send
-                                </button>
-                            </div>
+                                class="desc--second text-lg text-justify text-secondary"
+                            >
+                                My journey in tech is driven by a deep passion
+                                for continuous learning and improvement. I’m
+                                currently expanding my skills in web development
+                                to become a full stack developer, with a strong
+                                focus on crafting functional, responsive, and
+                                user-focused web applications. I value clean
+                                code, attention to detail, and always strive to
+                                deliver solutions that not only meet technical
+                                standards but also bring real value to users and
+                                businesses. Through both formal education and
+                                self-learning, I aim to grow into a versatile
+                                and impactful software engineer.
+                            </p>
                         </div>
                     </div>
                 </div>
-            </form>
+            </div>
         </div>
 
         <!-- Footer -->
@@ -363,25 +291,25 @@
                                 <img
                                     title="Facebook"
                                     class="footer__social-item"
-                                    src="/images/ic-facebook-48.png"
+                                    src="../images/ic-facebook-48.png"
                                     alt="ic-facebook"
                                 />
                                 <img
                                     title="Instagram"
                                     class="footer__social-item"
-                                    src="/images/ic-instagram-48.png"
+                                    src="../images/ic-instagram-48.png"
                                     alt="ic-facebook"
                                 />
                                 <img
                                     title="Twitter"
                                     class="footer__social-item"
-                                    src="/images/ic-twitter-48.png"
+                                    src="../images/ic-twitter-48.png"
                                     alt="ic-facebook"
                                 />
                                 <img
                                     title="Linkedin"
                                     class="footer__social-item"
-                                    src="/images/ic-linkedin-48.png"
+                                    src="../images/ic-linkedin-48.png"
                                     alt="ic-facebook"
                                 />
                             </div>
@@ -395,7 +323,5 @@
                 </div>
             </div>
         </div>
-
-        <script src="/js/main.js"></script>
     </body>
 </html>
