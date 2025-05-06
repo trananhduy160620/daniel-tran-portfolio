@@ -96,7 +96,7 @@
     background-color: var(--color-white);
     border: 1px solid #ccc;
     padding: 16px;
-    min-width: 180px;
+    min-width: 100px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     opacity: 0;
     visibility: hidden;
@@ -1077,7 +1077,7 @@
     }
 
     .popup-content {
-        left: -130%;
+        left: -75%;
     }
 
     /* Intro Container */
@@ -1211,7 +1211,7 @@
     }
 
     .popup-content {
-        left: -60%;
+        left: -35%;
     }
 
     /* ==== Banner ==== */
@@ -1341,7 +1341,7 @@
     }
 
     .popup-content {
-        left: -25%;
+        left: -26%;
     }
 
     /* ==== Banner ==== */
